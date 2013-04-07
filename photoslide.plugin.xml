@@ -5,11 +5,13 @@
 	<author url="http://asymptomatic.net/">Owen Winkler</author>
 	<version>1.0</version>
 	<url>http://habariproject.org/</url>
-	<description><![CDATA[Add individual image assets as posts that can be used in a slideshow.]]></description>
+	<description><![CDATA[Add image assets from a silo to a set so they can be used in a slideshow.]]></description>
 	<copyright>2011</copyright>
 	<guid>e071059a-c2bb-4f3d-a9c6-fc34232040b6</guid>
 	<help><value><![CDATA[
-	See also <a href="http://screencast.com/t/qYxeJVKpC1O3">Screencast</a>
+		On activation, this plugin will add a new content type named photoset. That content type has no text content, instead you can add images from a silo to it and give them a title.
+		
+		The photos are then available to your theme. You can get a list of thumbnails (not actual thumbnails, shrinked images) using <code>$post->content_thumbnails</code> and a list of full-size images using <code>$post->content_media</code>. Both lists will already have the necessary HTML tags around them.
 	]]></value></help>
 </pluggable>
  
